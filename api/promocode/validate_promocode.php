@@ -35,9 +35,6 @@ if(
     $destination_address = $data->destination_address;
     $promocode->promocode=$data->promocode;
 
-    // $origin_address = "legends rugby grounds";
-    // $destination_address = "village mall bugolobi";
-    // $promocode->promocode= 4;
     
  
 // get the promo code details
@@ -60,9 +57,8 @@ if(
    $end_time = $promocode->end_time;
    $date = $promocode->date;
     
-    // function validate_promocode($status,$radius,$amount,$event_location,$origin_address,$destination_address,$date,$start_time,$end_time){
-
-
+ 
+        //get current date and time
         $todays_date =date('Y-m-d');
         $time =date('H:m');
    
@@ -109,7 +105,7 @@ if(
 
                 echo json_encode(array("message" => "The promo code expired or the event is not today"));
             }
-             // elseif (($origin_distance > $radius) || ($destination_distance > $radius)) {
+            
             elseif ($radius > $origin_distance || $radius > $destination_distance ) {
 
                 //get latitude and longtitude cordinates for the destination
