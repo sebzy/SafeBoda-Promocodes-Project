@@ -33,7 +33,7 @@ if(
     // set promocode property values
     $promocode->event_name = $data->event_name;
     // $promocode->expiry = $data->expiry;
-    $promocode->radius = $data->event_location;
+    $promocode->event_location = $data->event_location;
     $promocode->start_time = $data->start_time;
     $promocode->end_time = $data->end_time;
     $promocode->date = $data->date;
