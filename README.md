@@ -1,5 +1,5 @@
 # SafeBoda-Promocodes-Project
-SafeBoda free rides using promocodes
+SafeBoda free rides using promocodes. This code below is an impelementation of the backend of the safeboda promocodes project with a well documented API. Safeboda is a motobike app that used to order for rides for transportation within Kampala.
 This project was created by Timothy Ssebulime H.M
 This is an entirely php project with mysql as the database.
 You can use localhost php to run the project.
